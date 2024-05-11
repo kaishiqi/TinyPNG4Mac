@@ -24,6 +24,9 @@ class MainViewController: NSViewController, NSOpenSavePanelDelegate, NSTableView
 	var totalSize: Double = 0
 	var totalRecudeSize: Double = 0
 	var keySaved = false
+    
+    let panelOpenHeight = 415.0
+    let panelCloseHeight = 315.0
 	
 	var inputKeyAlert: InputKeyAlert?;
 	
@@ -174,7 +177,7 @@ class MainViewController: NSViewController, NSOpenSavePanelDelegate, NSTableView
 	@IBAction func clickSettings(_ sender: AnyObject) {
 		let window = NSApplication.shared.windows.first!
 		let height = window.frame.height
-		changePanel(height == 320, animated: true)
+		changePanel(height == panelCloseHeight, animated: true)
 	}
 	
 	@IBAction func clickFinder(_ sender: AnyObject) {
@@ -192,9 +195,9 @@ class MainViewController: NSViewController, NSOpenSavePanelDelegate, NSTableView
 		let height = window.frame.height
 		var target = height
 		if open {
-			target = 417
+            target = panelOpenHeight
 		} else {
-			target = 320
+			target = panelCloseHeight
 		}
 		if frame.size.height == target {
 			return
