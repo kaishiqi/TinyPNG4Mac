@@ -34,6 +34,10 @@ brew install --cask tinypng4mac
 
 ### 更新信息
 
+**Version 1.0.7.1**
+
+1. 增加重试功能
+
 **Version 1.0.7**
 
 1. 支持 webp 格式。

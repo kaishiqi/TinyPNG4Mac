@@ -34,6 +34,10 @@ Check "Anywhere" in `Preferences -> Security & privacy` if you can not open this
 
 ### Release Notes
 
+**Version 1.0.7.1**
+
+1. add retry funtion
+
 **Version 1.0.7**
 
 1. Add support for webp files.
